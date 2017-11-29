@@ -1,0 +1,10 @@
+name "dummy_component"
+import_types_from "dummy_componentTypes.hpp"
+using_task_library "iodrivers_base"
+
+import_types_from "std"
+task_context "Task" do
+    subclasses "iodrivers_base::Task"
+    needs_configuration
+end
+
